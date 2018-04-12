@@ -1,0 +1,65 @@
+<body>
+  <div class="container">
+    <header>
+      <h1 class="text-center">Todo List</h1>
+    </header>
+    <form class="new-task form-horizontal">
+
+      <div class="form-group">
+        <label class="control-label col-md-2" for="text">Name:</label>
+        <div class="col-md-9" >  
+          <input class="form-control" type="text" name="text" id="text" placeholder="Example: John Doe" required  />
+        </div>
+      </div><br>
+
+      <div class="form-group">
+        <label class="control-label col-md-2" for="text">Email Address :</label>
+        <div class="col-md-9" >  
+          <input class="form-control" type="email" name="email" id="email" placeholder="Example: johndoe@gmail.com" required  />
+        </div>
+      </div><br>
+
+      <div class="form-group">
+        <label class="control-label col-md-2" for="text">Phone NO. :</label>
+        <div class="col-md-9" >  
+          <input class="form-control" type="number" name="phone" id="phone" placeholder="Example: 01234567890" required  />
+        </div>
+      </div><br>
+
+      <div class="form-group">
+        <label class="control-label col-md-2" for="text">Date of Birth :</label>
+        <div class="col-md-9" >  
+          <input class="form-control" type="date" name="dob" id="dob" required />
+        </div>
+      </div>
+
+      <input class="col-md-4 col-md-offset-2 btn btn-info" type="submit" name="submit"><br>
+
+    </form>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <table class="table table-bordered table-striped table-hover" >
+          <thead class=" thead-dark">
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Date of Birth</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each tasks}}
+              <tr>
+                {{> task}}
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+
+  </div>
+</body>

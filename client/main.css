@@ -1,0 +1,33 @@
+body
+{
+  background: linear-gradient(to bottom, #f3f3f3, #E3E3E3) fixed;
+}
+
+*
+{
+  font-family: 'Liberation Sans', Arial, sans-serif;
+  font-size: 14px;
+}
+header
+{
+  font-family: 'Pacifico', Arial, sans-serif;
+  padding-top: 2em;
+  padding-bottom: 3em;
+  background: #563d7c;
+  margin-bottom: 30px;
+}
+header h1
+{
+  font-size: 40px;
+}
+.container
+{
+  background-color: #e3e3e3;
+  padding: 0;
+  border: 2px solid #666;
+}
+th
+{
+  background-color: #334;
+  color: white
+}
